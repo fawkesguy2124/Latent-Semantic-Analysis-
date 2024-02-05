@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 
 documents_list = []
-with open( os.path.join("articles+4.txt") ,"r") as fin:
+with open( os.path.join("articles.txt") ,"r") as fin:
     for line in fin.readlines():
         text = line.strip()
         documents_list.append(text)
